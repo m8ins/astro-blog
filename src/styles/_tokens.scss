@@ -1,0 +1,65 @@
+// colors
+
+:root {
+  --dark-glare: hsl(210, 9%, 43%);
+  --dark: hsl(210, 18%, 30%);
+  --dark-shade: hsl(210, 24%, 16%);
+  --light-glare: hsl(344, 7%, 96%);
+  --light: hsl(344, 13%, 91%);
+  --light-shade: hsl(344, 24%, 85%);
+  --primary-glare: hsl(340, 89%, 75%);
+  --primary: hsl(340, 67%, 47%);
+  --primary-shade: hsl(340, 78%, 30%);
+  --secondary-glare: hsl(210, 93%, 73%);
+  --secondary: hsl(210, 83%, 53%);
+  --seconary-shade: hsl(210, 95%, 36%);
+
+  // font sizing
+  --font-size-100: 0.75rem;
+  --font-size-200: 0.875rem;
+  --font-size-300: 1rem;
+  --font-size-400: 1.25rem;
+  --font-size-500: 1.5rem;
+  --font-size-600: 2.25rem;
+  --font-size-700: 3rem;
+
+  // leading
+  --leading-body-text: 1.5;
+  --leading-flat: 1.1;
+
+  // spacing
+  --spacing-01: 0.25rem;
+  --spacing-02: 0.5rem;
+  --spacing-03: 0.75rem;
+  --spacing-04: 1rem;
+  --spacing-05: 1.5rem;
+  --spacing-06: 2rem;
+  --spacing-07: 3rem;
+  --spacing-08: 4rem;
+  --spacing-09: 5rem;
+
+  // tokens
+  --bg-01: var(--light-glare);
+
+  body[data-theme="dark"] {
+    --bg-01: var(--dark-shade);
+  }
+
+  // text tokens
+  --text-color-primary: var(--dark-shade);
+  --text-color-secondary: var(--dark);
+
+  --action-text-color: var(--primary-shade);
+
+  body[data-theme="dark"] {
+    --text-color-primary: var(--light-glare);
+    --text-color-secondary: var(--light);
+  }
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-action: var(--font-weight-bold);
+
+  --font-family-text: "Satoshi", sans-serif;
+  --font-family-heading: "Sentient", serif;
+}
